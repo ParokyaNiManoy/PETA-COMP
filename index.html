@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+    Homepage
+    </title>
+    <style>
+    body {
+/* in case of failed gradient */
+    background-color: #FFEA7F;
+    background-image: linear-gradient(#FFDF3F, #FFEA7F, #AA9C55);
+    padding: 0;
+    margin: 0;
+    }
+
+    h1,h2 {
+    text-align: center;
+    font-family: Arial;
+    }
+
+    .board p, .cabinetset p {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+    font-family: Arial;
+    width: 500px;
+    margin: 20px auto;
+    }
+
+    .board p {
+    width: auto;
+    background-color: #FFEA7F;
+    box-shadow: 0px 0px 5px 2px #000000;
+    }
+
+    span {
+    background-color: #00FF00;
+    }
+
+    button {
+    width: 40px;
+    height: 40px;
+    background-color: #402000;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 50%;
+    }
+
+    button:hover {
+    box-shadow: 0px 0px 15px 8px #FFFFFF;
+    }
+
+    .case {
+    margin: auto;
+/* in case of failed gradient */
+    background-color: #FFEA7F;
+    background-image: linear-gradient(#FFDF3F, #FFEA7F, #AA9C55);
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    }
+
+    .frame {
+    display: grid;
+    grid-template-areas:
+    '1 2 3';
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column; 
+    }
+
+    .header {
+
+    }
+
+    #name {
+    color: #CCCCCC;
+    background-color: #804000;
+    border: 5px solid #402000;
+    margin: 0px;
+    box-sizing: border-box;
+    }
+
+    .board {
+    background-color:#FFE5B2;
+    border: 5px solid #654300;
+    padding: 15px;
+    margin: 20px;
+    word-break: break-all;
+    box-shadow: inset 0px 0px 10px 1px #000000;
+    }
+
+    .cabinetset {
+    background-color: #808080;
+    color: #FFFFFF;
+    border: 4px solid #404040;
+    padding: 20px;
+    margin: auto;
+    width: auto;
+    min-width: 1800px;
+    max-width: 1800px;
+    height: 400px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial;
+    display: grid;
+    grid-template-areas:
+    '1 2 3'
+    '4 5 6';
+    gap: 10px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    }
+
+    .cabinet{background-color: #804000; border: 4px solid #402000;}
+
+    .floor {
+    background-color: #FFCBCB;
+    padding: 20px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+
+    </style>
+  </head>
+<!--This is just a placeholder, i am still trying to make a cabinet. Update, i managed to make it now.-->
+  <body>
+    <div class="case">
+      <header>
+        <div class="header">
+          <h1 id="name">
+          Office Workers
+          </h1>
+        </div>
+        <div class="frame">
+            <div id="board1" class="board">
+              <section >
+                <h2>
+                Welcome!
+                </h2>
+                <p>
+                Thank you for visting us! We are glad to have you as our visitor!
+                You are now at <b>Office Workers</b>, where we do office things!
+                Over here as you go through our logs, may you be entertained by even the <b>mundune</b>.
+                So go ahead, and <b>trod</b> through what we have here, visitor!
+                </p>
+
+                <p>
+                If you are confused on how you navigate through our website, refer to the <span>"How to Navigate"</span> board.
+                <br>
+                If instead confused on what this website contains and holds, refer to the <span>"What to expect here"</span> board.
+                </p>
+              </section>
+            </div>
+
+            <div id="board2" class="board">
+              <section>
+                <h2>
+                How to navigate
+                </h2>
+                <p>
+                Now if you do not know how to navigate, this board will show you!
+                The way you move through our site is by buttons, because they are effective!
+                There will be cues to know if you are on a button or not; usually, it is <b>shadows!</b>
+                </p>
+
+                <p>
+                Others cues may include a changed cursor or a click sound or change of color etc.
+                Hopefully you have the gist of it now, and so have a good day!
+                </p>
+              </section>
+            </div>
+            <div id="board3" class="board">
+              <section>
+                <h2>
+                What to expect here
+                </h2>
+                <p>
+                With such a website that we have, you may wonder what we have here, so what <b>do</b> we have here?
+                </p>
+
+                <p>
+                We have cabinets to open and to close, we have documents to read regarding us, the people who made this website!
+                We also have buttons to press, However it may not sound like a lot,
+                but even if it is small in <b>quantity</b>, maybe it is for <b>quality</b>.
+                </p>
+
+                <p>
+                With that, that is all, good day to you all!
+                </p>
+              </section>
+            </div>
+        </div>
+      </header>
+      <div class="cabinetset">
+
+        <div id="cab1" class="cabinet">
+          <p> Jariz </p>
+          <br>
+            <button type="button" onclick="location.href='profile1.html'"></button>
+        </div>
+
+        <div id="cab2" class="cabinet">
+          <p> Dillon </p>
+          <br>
+            <button type="button" onclick="location.href='profile2.html'"></button>
+        </div>
+
+        <div id="cab3" class="cabinet">
+          <p> Kyrie </p>
+          <br>
+            <button type="button" onclick="location.href='profile3.html'"></button>
+        </div>
+
+       <div id="cab4" class="cabinet">
+          <p> Ynigo </p>
+          <br>
+            <button type="button" onclick="location.href='profile4.html'"></button>
+        </div>
+
+        <div id="cab5" class="cabinet">
+          <p> Roi </p>
+          <br>
+            <button type="button" onclick="location.href='profile5.html'"></button>
+        </div>
+
+        <div id="cab6" class="cabinet">
+          <p> Andrei </p>
+          <br>
+            <button type="button" onclick="location.href='profile6.html'"></button>
+        </div>
+      </div>
+      <div class="floor">
+      </div>
+    </div>
+  </body>
+</html>
